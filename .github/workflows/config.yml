@@ -11,8 +11,8 @@ jobs:
 
       - name: Run UI-tests via docker-compose
         env:
-          LOGIN: ${{ secret.LOGIN }}
-          PASSWORD: ${{ secret.PASSWORD }}
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run:
           docker-compose up --exit-code-from regression || true
 
@@ -27,4 +27,3 @@ jobs:
           branch: gh-pages
           folder: allure-report
           clean: true
-          
