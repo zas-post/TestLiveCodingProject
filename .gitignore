@@ -5,4 +5,5 @@ __pycache__
 .env
 report
 allure-results
+allure-report
 venv
