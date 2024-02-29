@@ -13,7 +13,3 @@ The goal of this project is to perform comprehensive testing of the Myinfo modul
 ```bash
   pip install -r requirements.txt
 ```
-- To run tests, use run.py
-```bash
-  docker-compose up
-```
